@@ -1,0 +1,63 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="logica.js"></script>
+  <link rel="stylesheet" href="dist/stylo.css">
+
+  <title>Calculadora 2.0</title>
+ </head>
+ <body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <br />
+  
+            <div class="calculadora">
+              <input id="visor" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+              
+              <div class="row">
+                <button onclick="calcular('sinal', 'c')" type="button" class="btn btn-white btn-lg clear font-weight-black">C</button>
+                <button onclick="calcular('sinal', '/')" type="button" class="btn btn-white btn-lg font-weight-black">/</button>
+                <button onclick="calcular('sinal', '*')" type="button" class="btn btn-white btn-lg font-weight-black">x</button>
+              </div>
+  
+              <div class="row">
+                <button onclick="calcular('numero', 7)" type="button" class="btn btn-white btn-lg font-weight-black">7</button>
+                <button onclick="calcular('numero', 8)" type="button" class="btn btn-white btn-lg font-weight-black">8</button>
+                <button onclick="calcular('numero', 9)" type="button" class="btn btn-white btn-lg font-weight-black">9</button>
+                <button onclick="calcular('sinal', '-')" type="button" class="btn btn-white btn-lg font-weight-black">-</button>
+              </div>
+              
+              <div class="row">
+                <button onclick="calcular('numero', 4)" type="button" class="btn btn-white btn-lg font-weight-black">4</button>
+                <button onclick="calcular('numero', 5)" type="button" class="btn btn-white btn-lg font-weight-black">5</button>
+                <button onclick="calcular('numero', 6)" type="button" class="btn btn-white btn-lg font-weight-black">6</button>
+                <button onclick="calcular('sinal', '+')" type="button" class="btn btn-white btn-lg font-weight-black">+</button>
+              </div>
+  
+              <div class="row">
+                <button onclick="calcular('numero', 1)" type="button" class="btn btn-white btn-lg font-weight-black">1</button>
+                <button onclick="calcular('numero', 2)" type="button" class="btn btn-white btn-lg font-weight-black">2</button>
+                <button onclick="calcular('numero', 3)" type="button" class="btn btn-white btn-lg font-weight-black">3</button>
+                <button onclick="calcular('sinal', '=')" type="button" class="btn btn-white btn-lg enter">=</button>
+              </div>
+  
+              <div class="row divFinal ">
+                <button onclick="calcular('numero', 0)" type="button" class="btn btn-white zero btn-lg font-weight-black">0</button>
+                <button onclick="calcular('sinal', '.')" type="button" class="btn btn-white btn-lg font-weight-black">.</button>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>  
+          
+ </body>
+ </html>
